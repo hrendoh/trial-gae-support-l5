@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::resource('items', 'ItemController',
+    ['except' => ['create', 'edit']]);

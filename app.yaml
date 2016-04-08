@@ -8,6 +8,9 @@ handlers:
           static_files: public/favicon.ico
           upload: public/favicon\.ico
 
+        - url: /js
+          static_dir: public/js
+
         - url: /build
           static_dir: public/build
           application_readable: true
